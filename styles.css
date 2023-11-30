@@ -1,0 +1,95 @@
+:root {
+    --main-blue: #1b2a68;
+    --main-orange: #E8751C;
+}
+
+body,
+html {
+    height: 100%
+}
+
+body,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    font-family: "Amatic SC", sans-serif
+}
+
+.menu {
+    display: none
+}
+
+.bgimg {
+    background-color: var(--main-blue);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: auto 70%;
+    background-image: url("./assets/images/pizza-pizza-logo-large.webp");
+    min-height: 90%;
+}
+
+.my-blue {
+    background-color: var(--main-blue);
+    color: white;
+}
+
+.my-border-blue {
+    border-color: var(--main-blue) !important;
+}
+
+.my-orange {
+    background-color: var(--main-orange);
+    color: white;
+    /* color: var(--main-blue) */
+}
+
+.my-hover-orange:hover {
+    background-color: var(--main-orange) !important;
+    color: white !important;
+    border: #1b2a68 solid 1px !important;
+}
+
+.my-border-orange {
+    border-color: var(--main-orange) !important;
+}
+
+.my-flex-center {
+    display: flex;
+    align-items: center;
+}
+
+.my-flex-evenly {
+    display: flex;
+    justify-content: space-evenly;
+}
+
+i {
+    padding-right: 8px;
+}
+
+a {
+    text-decoration: none;
+}
+
+.my-top-contact-details {
+    font-size: 36px;
+}
+
+@media only screen and (max-width: 600px) {
+
+    .bgimg {
+        background-size: 90% auto;
+    }
+
+    .my-top-contact-details {
+        font-size: 24px;
+    }
+
+    .my-flex-center {
+        flex-direction: column;
+        gap: 16px;
+    }
+}
