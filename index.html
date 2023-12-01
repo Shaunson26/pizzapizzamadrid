@@ -5,6 +5,7 @@
   <title>Pizza Pizza Madrid</title>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
+  <script src="https://www.w3schools.com/lib/w3.js"></script>
   <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
   <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Amatic+SC">
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
@@ -51,208 +52,39 @@ En Uber Eats, Just Eat y Glovo🛵">
 <body>
 
   <!-- Navbar (sit on top) -->
-  <div class="w3-top w3-hide-small">
-    <div class="w3-bar w3-xlarge my-blue w3-border-bottom my-border-orange" id="myNavbar">
-      <a href="#" class="w3-bar-item w3-button my-hover-orange">HOME</a>
-      <a href="#menu" class="w3-bar-item w3-button my-hover-orange">MENU</a>
-      <a href="#about" class="w3-bar-item w3-button my-hover-orange">ABOUT</a>
-      <a href="#myMap" class="w3-bar-item w3-button my-hover-orange">CONTACT</a>
-    </div>
-  </div>
+  <div class="w3-top w3-hide-small" w3-include-html="./sections/navbar.html"></div>
 
   <!-- Header with image -->
-  <header class="bgimg w3-display-container" id="home">
-    <div class="w3-display-bottommiddle">
-      <p><a href="#menu" class="w3-button w3-xxlarge my-blue my-hover-orange w3-border my-border-orange">Let me see the
-          menu</a></p>
-    </div>
-  </header>
+  <header class="bgimg w3-display-container" id="home" w3-include-html="./sections/header.html"></header>
 
-  <div class="w3-container w3-xlarge my-orange">
-    <div class="w3-content">
-      <div class="my-flex-evenly my-top-contact-details">
-        <p><i class="fa fa-phone"></i>910 73 18 27</p>
-        <p><a href="https://maps.app.goo.gl/f5YYoLhAGxwJKLRC8">Luis Vives, 16, 28002 Madrid</a></p>
-
-      </div>
-    </div>
-  </div>
+  <!-- Top Contact Container-->
+  <div class="w3-container w3-xlarge my-orange" w3-include-html="./sections/contact-top.html"></div>
 
   <!-- Menu Container -->
-  <div class="w3-container my-orange w3-padding-32 w3-xxlarge" id="menu">
-    <div class="w3-content">
-      <h1 class="w3-center w3-jumbo">THE MENU</h1>
-
-      <div class="w3-center">
-        <p><a
-            href="https://order.tryotter.com/s/pizza-pizza/calle-luis-vives%2C-16-madrid/69006d84-6eb6-414c-a056-c542549f60c7"
-            class="w3-button w3-xxlarge my-blue w3-border my-border-orange my-hover-orange">Online orders here</a></p>
-      </div>
-
-
-      <div class="w3-row w3-center w3-border my-border-blue my-blue">
-        <a href="javascript:void(0)" onclick="openMenu(event, 'Pizza');" id="myLink">
-          <div class="w3-col s4 tablink w3-padding-large my-border-orange">Pizza</div>
-        </a>
-        <a href="javascript:void(0)" onclick="openMenu(event, 'Pasta');">
-          <div class="w3-col s4 tablink w3-padding-large my-hover-orange">Salads</div>
-        </a>
-        <a href="javascript:void(0)" onclick="openMenu(event, 'Starter');">
-          <div class="w3-col s4 tablink w3-padding-large my-hover-orange">Starter</div>
-        </a>
-      </div>
-
-      <div id="Pizza" class="w3-container menu w3-padding w3-white">
-      </div>
-
-
-      <div id="Pasta" class="w3-container menu w3-padding-32 w3-white">
-        <h1><b>Lasagna</b> <span class="w3-tag w3-grey w3-round">Popular</span> <span
-            class="w3-right w3-tag w3-dark-grey w3-round">$13.50</span></h1>
-        <p class="w3-text-grey">Special sauce, mozzarella, parmesan, ground beef</p>
-        <hr>
-
-        <h1><b>Ravioli</b> <span class="w3-right w3-tag w3-dark-grey w3-round">$14.50</span></h1>
-        <p class="w3-text-grey">Ravioli filled with cheese</p>
-        <hr>
-
-        <h1><b>Spaghetti Classica</b> <span class="w3-right w3-tag w3-dark-grey w3-round">$11.00</span></h1>
-        <p class="w3-text-grey">Fresh tomatoes, onions, ground beef</p>
-        <hr>
-
-        <h1><b>Seafood pasta</b> <span class="w3-right w3-tag w3-dark-grey w3-round">$25.50</span></h1>
-        <p class="w3-text-grey">Salmon, shrimp, lobster, garlic</p>
-      </div>
-
-
-      <div id="Starter" class="w3-container menu w3-padding-32 w3-white">
-        <h1><b>Today's Soup</b> <span class="w3-tag w3-grey w3-round">Seasonal</span><span
-            class="w3-right w3-tag w3-dark-grey w3-round">$5.50</span></h1>
-        <p class="w3-text-grey">Ask the waiter</p>
-        <hr>
-
-        <h1><b>Bruschetta</b> <span class="w3-right w3-tag w3-dark-grey w3-round">$8.50</span></h1>
-        <p class="w3-text-grey">Bread with pesto, tomatoes, onion, garlic</p>
-        <hr>
-
-        <h1><b>Garlic bread</b> <span class="w3-right w3-tag w3-dark-grey w3-round">$9.50</span></h1>
-        <p class="w3-text-grey">Grilled ciabatta, garlic butter, onions</p>
-        <hr>
-
-        <h1><b>Tomozzarella</b> <span class="w3-right w3-tag w3-dark-grey w3-round">$10.50</span></h1>
-        <p class="w3-text-grey">Tomatoes and mozzarella</p>
-      </div><br>
-
-    </div>
-  </div>
+  <div class="w3-container my-orange w3-padding-16 w3-xxlarge" id="menu" w3-include-html="./sections/menu.html"></div>
 
   <!-- About Container -->
-  <div class="w3-container w3-padding-64 my-blue w3-xlarge" id="about">
-    <div class="w3-content">
-      <h1 class="w3-center w3-jumbo" style="margin-bottom:64px">About</h1>
-      <p>The Pizza Restaurant was founded in blabla by Mr. Italiano in lorem ipsum dolor sit amet, consectetur
-        adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
-        quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
-      <p>We are proud of our interiors.</p>
-      <div class="w3-center">
-        <img src="./assets/images/restaurant.jpg" style="width:100%;max-width: 338px;"
-          class="w3-margin-top w3-margin-bottom" alt="Restaurant">
-      </div>
-
-      <h1><b>Opening Hours</b></h1>
-
-      <div class="w3-row">
-        <div class="w3-col s6">
-          <p>Mon & Tue CLOSED</p>
-          <p>Wednesday 10.00 - 24.00</p>
-          <p>Thursday 10:00 - 24:00</p>
-        </div>
-        <div class="w3-col s6">
-          <p>Friday 10:00 - 12:00</p>
-          <p>Saturday 10:00 - 23:00</p>
-          <p>Sunday Closed</p>
-        </div>
-      </div>
-
-    </div>
-  </div>
+  <div class="w3-container w3-padding-16 my-blue w3-xlarge" id="about" w3-include-html="./sections/about.html"></div>
 
   <!-- Image of location/map -->
-  <img src="./assets/images/map.png" class="w3-image w3-greyscale" style="width:100%;" id="myMap">
-
+  <div w3-include-html="./sections/map.html"></div>
+  
   <!-- Contact -->
-  <div class="w3-container w3-padding-64 my-top-contact-details my-orange">
-    <div class="w3-content">
-      <h1 class="w3-center w3-jumbo" style="margin-bottom:64px">Contact</h1>
-      <div class="w3-center">
-        <p>Find us at <a href="https://maps.app.goo.gl/f5YYoLhAGxwJKLRC8">Luis Vives, 16, 28002 Madrid</a></p>
-      </div>
-      <div class="my-flex-evenly">
-        <span><i class="fa fa-phone"></i>910 73 18 27</span>
-        <span><a href="https://www.instagram.com/pizzapizzamad/" target="_blank"><i
-              class="fa fa-instagram"></i>@pizzapizzamad</a></span>
-      </div>
-    </div>
-  </div>
+  <div class="w3-container w3-padding-16 my-top-contact-details my-orange" w3-include-html="./sections/contact.html"></div>
 
   <!-- Footer -->
-  <footer class="w3-center my-blue w3-padding-16 w3-xxlarge">
-    <span>Powered by <a href="https://www.shaunnielsen.com" title="Author" target="_blank"
-        class="w3-hover-text-green">snielsen</a></span>
-  </footer>
+  <footer class="w3-center my-blue w3-padding w3-large"  w3-include-html="./sections/footer.html"></footer>
 
   <script src="menu-items.js"></script>
+  <script src="pizzapizza.js"></script>
   <script>
-    function makeMenuItem(data) {
-      let result =
-        `<div class="w3-row my-flex-center">
-          <div class="w3-col" style="width:325px">
-            <div class="w3-center">
-              <img class="w3-center" src="${data.image}" height="200px" alt="">
-            </div>
-          </div>
-          <div class="w3-rest" style="width: 100%;">
-            <div>
-              <div><b>${data.pizza}</b> <span class="w3-right w3-tag w3-dark-grey w3-round">${data.price}</span></div>
-              <div><span class="w3-text-grey">${data.ingredients}</span></div>
-            </div>
-          </div>
-        </div>
-        <hr>`
-
-      return result
-    }
-
-    function addMenuItem(id, text) {
-      let container = document.getElementById(id)
-      container.innerHTML += text
-    }
-
-    menu.forEach(v => {
-      let templatedText = makeMenuItem(v)
-      addMenuItem('Pizza', templatedText)
-    })
-
-
-
-  </script>
-
-  <script>
-    // Tabbed Menu
-    function openMenu(evt, menuName) {
-      var i, x, tablinks;
-      x = document.getElementsByClassName("menu");
-      for (i = 0; i < x.length; i++) {
-        x[i].style.display = "none";
-      }
-      tablinks = document.getElementsByClassName("tablink");
-      for (i = 0; i < x.length; i++) {
-        tablinks[i].className = tablinks[i].className.replace(" my-orange", "");
-      }
-      document.getElementById(menuName).style.display = "block";
-      evt.currentTarget.firstElementChild.className += " my-orange";
-    }
-    document.getElementById("myLink").click();
+    w3.includeHTML(function () {
+      document.getElementById("myLink").click();
+      menu.forEach(v => {
+        let templatedText = makeMenuItem(v)
+        addMenuItem('Pizza', templatedText)
+      })
+    });
   </script>
 
 </body>

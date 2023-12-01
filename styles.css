@@ -18,6 +18,19 @@ h6 {
     font-family: "Amatic SC", sans-serif
 }
 
+i {
+    padding-right: 8px;
+}
+
+a {
+    text-decoration: none;
+    border-bottom: 1px solid rgba(255, 255, 255, 0.25);
+}
+
+a:hover {
+    border-bottom: 1px solid rgba(255, 255, 255, 1);
+}
+
 .menu {
     display: none
 }
@@ -29,6 +42,10 @@ h6 {
     background-size: auto 70%;
     background-image: url("./assets/images/pizza-pizza-logo-large.webp");
     min-height: 90%;
+}
+
+.my-bold {
+    font-weight: bold;
 }
 
 .my-blue {
@@ -64,14 +81,6 @@ h6 {
 .my-flex-evenly {
     display: flex;
     justify-content: space-evenly;
-}
-
-i {
-    padding-right: 8px;
-}
-
-a {
-    text-decoration: none;
 }
 
 .my-top-contact-details {
