@@ -18,6 +18,10 @@ h6 {
     font-family: "Amatic SC", sans-serif
 }
 
+p {
+    text-align: justify;
+}
+
 i {
     padding-right: 8px;
 }
@@ -85,6 +89,11 @@ a:hover {
 
 .my-top-contact-details {
     font-size: 36px;
+}
+
+.hours {
+    margin: 4px;
+    text-align: center;
 }
 
 @media only screen and (max-width: 600px) {

@@ -60,30 +60,20 @@ En Uber Eats, Just Eat y Glovo🛵">
   <!-- Top Contact Container-->
   <div class="w3-container w3-xlarge my-orange" w3-include-html="./sections/contact-top.html"></div>
 
-  <!-- Menu Container -->
-  <div class="w3-container my-orange w3-padding-16 w3-xxlarge" id="menu" w3-include-html="./sections/menu.html"></div>
-
   <!-- About Container -->
   <div class="w3-container w3-padding-16 my-blue w3-xlarge" id="about" w3-include-html="./sections/about.html"></div>
 
-  <!-- Image of location/map -->
-  <div w3-include-html="./sections/map.html"></div>
-  
   <!-- Contact -->
   <div class="w3-container w3-padding-16 my-top-contact-details my-orange" w3-include-html="./sections/contact.html"></div>
 
+  <!-- Image of location/map -->
+  <div w3-include-html="./sections/map.html"></div>
+
   <!-- Footer -->
   <footer class="w3-center my-blue w3-padding w3-large"  w3-include-html="./sections/footer.html"></footer>
-
-  <script src="menu-items.js"></script>
-  <script src="pizzapizza.js"></script>
+  <!-- <script src="pizzapizza.js"></script> -->
   <script>
     w3.includeHTML(function () {
-      document.getElementById("myLink").click();
-      menu.forEach(v => {
-        let templatedText = makeMenuItem(v)
-        addMenuItem('Pizza', templatedText)
-      })
     });
   </script>
 
